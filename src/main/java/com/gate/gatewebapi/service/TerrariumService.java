@@ -27,6 +27,7 @@ public class TerrariumService {
         Terrarium temp = new Terrarium();
         temp.setName(terrariumDto.getName());
         temp.setRecommendedConditions(recommendedRepository.getById(terrariumDto.getRecommendedId()));
+        temp.setDeviceId(terrariumDto.getDeviceId());
         terrariumRepository.save(temp);
         owner.getTerrariums().add(temp);
         userRepository.save(owner);
