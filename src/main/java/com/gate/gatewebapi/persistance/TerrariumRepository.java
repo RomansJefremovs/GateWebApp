@@ -4,5 +4,5 @@ import com.gate.gatewebapi.domain.Terrarium;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TerrariumRepository extends JpaRepository<Terrarium, Long> {
-
+    Terrarium findByDeviceId(String deviceId);
 }

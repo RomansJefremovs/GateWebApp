@@ -14,5 +14,5 @@ public class MeasurementDto {
     private int co2;
     private int temperature;
     private int humidity;
-    private LocalDateTime timestamp;
+    private long timestamp;
 }

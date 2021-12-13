@@ -15,6 +15,7 @@ public class Terrarium {
     @Id @GeneratedValue
     private Long id;
     private String name;
+    private String deviceId;
     @ManyToOne
     private RecommendedConditions recommendedConditions;
 }

@@ -47,8 +47,11 @@ public class TerrariumService {
         terrariumRepository.save(entity);
         return toDto(entity);
     }
+    public TerrariumDto getByDeviceId(String deviceId){
+        return toDto(terrariumRepository.findByDeviceId(deviceId));
+    }
 
     private TerrariumDto toDto(Terrarium t){
-        return new TerrariumDto(t.getId(), t.getName(),t.getRecommendedConditions().getId());
+        return new TerrariumDto(t.getId(), t.getName(),t.getDeviceId(),t.getRecommendedConditions().getId());
     }
 }

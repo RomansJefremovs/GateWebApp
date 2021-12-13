@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class TerrariumDto {
     private Long id;
     private String name;
+    private String deviceId;
     private Long recommendedId;
 }

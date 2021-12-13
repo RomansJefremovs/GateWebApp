@@ -39,6 +39,6 @@ public class MeasurementService {
                 entity.getCo2(),
                 entity.getTemperature(),
                 entity.getHumidity(),
-                entity.getTimestamp());
+                entity.getTimestampMilis());
     }
 }
